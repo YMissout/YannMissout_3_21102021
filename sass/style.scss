@@ -1,1 +1,19 @@
 @import "./libs/reset.scss";
+@import "./libs/base.scss";
+@import "./libs/mixins.scss";
+
+* {
+  width: 100%;
+  font-family: $roboto;
+}
+
+h1 {
+  @include center;
+  font-family: $shrikhand;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.reservation {
+  @include block_center;
+}
