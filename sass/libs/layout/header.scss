@@ -1,0 +1,13 @@
+@use "../base";
+
+header {
+  h1 {
+    font-family: base.$shrikhand;
+    text-align: center;
+    font-size: 2rem;
+    box-shadow: 0 0 0.5rem rgb(0 0 0 / 25%);
+    padding: 0.3rem;
+    position: relative;
+    padding: 1rem 0;
+  }
+}

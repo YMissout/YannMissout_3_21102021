@@ -1,0 +1,12 @@
+@use "../mixins";
+
+.city {
+  @include mixins.center;
+  background-color: #f3f3f3;
+  text-align: center;
+  padding: 1rem;
+  gap: 1rem;
+  i {
+    font-size: 1.2rem;
+  }
+}
