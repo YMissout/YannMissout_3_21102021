@@ -5,6 +5,7 @@
 
 .tuto {
   counter-reset: steps;
+  margin-bottom: 2rem;
   ol {
     display: flex;
     gap: 2rem;
@@ -29,7 +30,7 @@
       background-color: colors.$primary;
       width: 2 * varibles.$tuto-height;
       height: 2 * varibles.$tuto-height;
-      bottom: varibles.$tuto-height;
+      top: 30%;
       left: -1 * varibles.$tuto-height;
       border-radius: 50%;
       display: grid;
