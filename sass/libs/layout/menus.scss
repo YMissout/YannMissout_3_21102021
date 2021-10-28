@@ -3,6 +3,7 @@
 
 .menus {
   background-color: #f6f6f6;
+  margin-bottom: 2rem;
   h2 {
     // margin-bottom: 2rem;
   }
@@ -32,18 +33,31 @@
   }
 
   .card {
-    // height: 4rem;
-    // flex-grow: 1;
-    // min-width: 30rem;
-    .card__image {
-      border-radius: 2rem;
-
+    &__image {
+      border-radius: 2rem 2rem 0 0;
       height: 15rem;
       background-size: cover;
     }
     @for $i from 1 through 4 {
       &__image-#{$i} {
         background-image: url(../../../assets/menu-#{$i}.jpg);
+      }
+    }
+    &__description {
+      position: relative;
+      h3,
+      p {
+        margin: 0.5rem;
+      }
+      h3 {
+        padding-top: 0.5rem;
+      }
+      i {
+        font-size: 1.5rem;
+        position: absolute;
+        right: 1rem;
+        top: 50%;
+        transform: translateY(-50%);
       }
     }
   }

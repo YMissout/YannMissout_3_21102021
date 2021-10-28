@@ -84,9 +84,21 @@ main {
   padding: 0 1rem;
 }
 
+h1,
+h2,
+h3 {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
 h2 {
   padding: 2rem 0;
   margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 header h1 {
@@ -192,6 +204,7 @@ header h1 {
 
 .menus {
   background-color: #f6f6f6;
+  margin-bottom: 2rem;
 }
 .menus .menus__cards {
   display: grid;
@@ -218,8 +231,8 @@ header h1 {
   right: 1rem;
   top: 1rem;
 }
-.menus .card .card__image {
-  border-radius: 2rem;
+.menus .card__image {
+  border-radius: 2rem 2rem 0 0;
   height: 15rem;
   background-size: cover;
 }
@@ -234,6 +247,23 @@ header h1 {
 }
 .menus .card__image-4 {
   background-image: url(../../../assets/menu-4.jpg);
+}
+.menus .card__description {
+  position: relative;
+}
+.menus .card__description h3,
+.menus .card__description p {
+  margin: 0.5rem;
+}
+.menus .card__description h3 {
+  padding-top: 0.5rem;
+}
+.menus .card__description i {
+  font-size: 1.5rem;
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 /*# sourceMappingURL=style.css.map */

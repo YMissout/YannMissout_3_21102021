@@ -9,7 +9,19 @@ main {
   padding: 0 1rem;
 }
 
+h1,
+h2,
+h3 {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
 h2 {
   padding: 2rem 0;
   margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
