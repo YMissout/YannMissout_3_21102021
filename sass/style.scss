@@ -1,8 +1,8 @@
-@use "./libs/reset";
+@use "./libs/utils/reset";
 
 @use "./libs/base";
 
-@use "./libs/mixins";
+@use "./libs/utils/mixins";
 
 @use "./libs/layout/header";
 

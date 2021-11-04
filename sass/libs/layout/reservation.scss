@@ -1,6 +1,4 @@
-@use "../utils/box-shadow";
-@use "../utils/zoom";
-@use "../utils/linear-gradient";
+@use "../utils/mixins";
 
 .reserv {
   text-align: center;
@@ -24,10 +22,10 @@
     cursor: pointer;
     transition-duration: 0.25s;
     transition: transform 200ms;
-    @include box-shadow.base-shadow;
-    @include linear-gradient.gradient;
+    @include mixins.base-shadow;
+    @include mixins.gradient;
     &:hover {
-      @include zoom.zoom;
+      @include mixins.zoom;
     }
   }
 }
