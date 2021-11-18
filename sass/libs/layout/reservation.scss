@@ -1,7 +1,9 @@
 @use "../utils/mixins";
+@use "../utils/colors";
 
 .reserv {
   text-align: center;
+  margin: 0 2rem 2rem 2rem;
 
   h2 {
     font-size: 1.5rem;
@@ -19,5 +21,45 @@
     & button:hover {
       @include mixins.zoom;
     }
+  }
+}
+
+.loader {
+  $animation-duration: 2s;
+  $animation-count: 2;
+  background: rgba(255, 255, 255, 0.87);
+  position: fixed;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  inset: 0;
+  z-index: 1;
+  opacity: 0.9;
+  animation: disappear 0.65s $animation-duration * $animation-count forwards;
+  transform-origin: top;
+  &::after {
+    content: "";
+    height: 100px;
+    width: 100px;
+    border-right: 5px solid transparent;
+    border-top: 5px solid colors.$primary;
+    border-radius: 50%;
+    animation: spin $animation-duration infinite ease-in-out;
+    animation-iteration-count: $animation-count;
+  }
+}
+
+@keyframes disappear {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0);
+  }
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
   }
 }

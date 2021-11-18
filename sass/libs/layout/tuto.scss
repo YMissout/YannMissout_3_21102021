@@ -14,7 +14,10 @@
     }
   }
   li {
+    margin: -1rem 0 -0.5rem 0;
     position: relative;
+    // display: flex;
+    // align-items: center;
     list-style-type: none;
     background-color: #f6f6f6;
     padding: 1rem 2rem;
@@ -37,6 +40,10 @@
     }
     &:hover {
       @include mixins.zoom;
+      background-color: lighten(colors.$primary, 35%);
+      i::before {
+        color: colors.$primary;
+      }
     }
     i.fas {
       margin-right: 1rem;
