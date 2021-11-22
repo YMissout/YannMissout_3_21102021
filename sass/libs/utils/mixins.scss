@@ -55,7 +55,8 @@
 @mixin heart-btn {
   position: relative;
   background-color: white;
-  border-radius: 0 0 2rem 2rem;
+  border-radius: 0 0 7rem 2rem;
+
   &::before {
     @include heart;
   }

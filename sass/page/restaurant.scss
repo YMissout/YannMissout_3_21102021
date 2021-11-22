@@ -36,9 +36,9 @@ body {
     margin-top: -2rem;
 
     h2 {
+      @include mixins.heart-btn;
       font-family: base.$shrikhand;
       padding: 2rem 1rem;
-      @include mixins.heart-btn;
       border-radius: 1.5rem 1.5rem 0 0;
       background-color: colors.$lightergrey;
     }

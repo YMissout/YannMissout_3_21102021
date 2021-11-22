@@ -173,7 +173,7 @@ header h1 {
   inset: 0;
   z-index: 1;
   opacity: 0.9;
-  animation: disappear 0.65s 4s forwards;
+  animation: disappear 0.65s 2s forwards;
   transform-origin: top;
 }
 .loader::after {
@@ -183,7 +183,7 @@ header h1 {
   border-right: 5px solid transparent;
   border-top: 5px solid #9356dc;
   border-radius: 50%;
-  animation: spin 2s infinite ease-in-out;
+  animation: spin 1s infinite ease-in-out;
   animation-iteration-count: 2;
 }
 
@@ -289,21 +289,21 @@ header h1 {
   background-position: center;
 }
 #homepage .menus .card__image-1 {
-  background-image: url(../../../assets/menu-1.jpg);
+  background-image: url(assets/menu-1.jpg);
 }
 #homepage .menus .card__image-2 {
-  background-image: url(../../../assets/menu-2.jpg);
+  background-image: url(assets/menu-2.jpg);
 }
 #homepage .menus .card__image-3 {
-  background-image: url(../../../assets/menu-3.jpg);
+  background-image: url(assets/menu-3.jpg);
 }
 #homepage .menus .card__image-4 {
-  background-image: url(../../../assets/menu-4.jpg);
+  background-image: url(assets/menu-4.jpg);
 }
 #homepage .menus .card__description {
   position: relative;
   background-color: white;
-  border-radius: 0 0 2rem 2rem;
+  border-radius: 0 0 7rem 2rem;
 }
 #homepage .menus .card__description::before {
   display: inline-block;
@@ -417,11 +417,11 @@ body {
   margin-top: -2rem;
 }
 #page-resto .resto__title h2 {
-  font-family: "Shrikhand", cursive;
-  padding: 2rem 1rem;
   position: relative;
   background-color: white;
-  border-radius: 0 0 2rem 2rem;
+  border-radius: 0 0 7rem 2rem;
+  font-family: "Shrikhand", cursive;
+  padding: 2rem 1rem;
   border-radius: 1.5rem 1.5rem 0 0;
   background-color: #f6f6f6;
 }
