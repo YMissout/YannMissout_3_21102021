@@ -524,7 +524,7 @@ body {
   overflow: hidden;
   margin: 0.5rem;
   box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.15);
-  animation: appear 1s;
+  animation: appear 0.5s;
   animation-fill-mode: both;
 }
 #page-resto .menus .menus__category .menu-item:nth-child(2) {
@@ -537,6 +537,7 @@ body {
   animation-delay: 400ms;
 }
 #page-resto .menus .menus__category .menu-item .menu-item__price {
+  font-family: "Roboto", sans-serif;
   padding: 0.8rem;
   margin-left: auto;
   font-weight: 900;
@@ -584,7 +585,7 @@ body {
 #page-resto .menus .menus__category .menu-item:hover i {
   height: 25px;
   width: 25px;
-  animation: quarter-spin 1s ease-in-out;
+  animation: quarter-spin 0.5s ease-in-out;
 }
 @keyframes quarter-spin {
   0% {
