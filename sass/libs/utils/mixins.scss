@@ -41,7 +41,7 @@
 @mixin heart($opacity: 1, $font-weight: 400, $color: inherit) {
   @include font-awesome($font-weight);
   content: "\f004";
-  font-size: 1.5rem;
+  font-size: 2rem;
   right: 1rem;
   top: 50%;
   transform: translateY(-50%);
@@ -50,10 +50,12 @@
   -webkit-background-clip: text;
   opacity: $opacity;
   transition: all 150ms ease;
+  position: absolute;
+  cursor: pointer;
+  // border: 2px solid black;
 }
 
 @mixin heart-btn {
-  position: relative;
   background-color: white;
   border-radius: 0 0 7rem 2rem;
 

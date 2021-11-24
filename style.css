@@ -302,10 +302,12 @@ header h1 {
 }
 #homepage .menus .card__description {
   position: relative;
+}
+#homepage .menus .card__description .heartBtn {
   background-color: white;
   border-radius: 0 0 7rem 2rem;
 }
-#homepage .menus .card__description::before {
+#homepage .menus .card__description .heartBtn::before {
   display: inline-block;
   font-style: normal;
   font-variant: normal;
@@ -315,7 +317,7 @@ header h1 {
   font-weight: 400;
   position: absolute;
   content: "\f004";
-  font-size: 1.5rem;
+  font-size: 2rem;
   right: 1rem;
   top: 50%;
   transform: translateY(-50%);
@@ -324,8 +326,10 @@ header h1 {
   -webkit-background-clip: text;
   opacity: 1;
   transition: all 150ms ease;
+  position: absolute;
+  cursor: pointer;
 }
-#homepage .menus .card__description::after {
+#homepage .menus .card__description .heartBtn::after {
   display: inline-block;
   font-style: normal;
   font-variant: normal;
@@ -335,7 +339,7 @@ header h1 {
   font-weight: 900;
   position: absolute;
   content: "\f004";
-  font-size: 1.5rem;
+  font-size: 2rem;
   right: 1rem;
   top: 50%;
   transform: translateY(-50%);
@@ -344,9 +348,11 @@ header h1 {
   -webkit-background-clip: text;
   opacity: 0;
   transition: all 150ms ease;
+  position: absolute;
+  cursor: pointer;
   background-image: linear-gradient(0deg, #9356dc, #ff79da);
 }
-#homepage .menus .card__description:hover::after {
+#homepage .menus .card__description .heartBtn:hover::after {
   opacity: 1;
   transform: translateY(-50%) scale(1.1);
 }
@@ -356,6 +362,10 @@ header h1 {
 }
 #homepage .menus .card__description p {
   padding-bottom: 1.5rem;
+}
+#homepage .menus .card__description:hover .fas {
+  opacity: 1;
+  transform: translateY(-50%) scale(1.2);
 }
 
 footer {
@@ -415,17 +425,19 @@ body {
 }
 #page-resto .resto__title {
   margin-top: -2rem;
+  position: relative;
 }
 #page-resto .resto__title h2 {
-  position: relative;
-  background-color: white;
-  border-radius: 0 0 7rem 2rem;
   font-family: "Shrikhand", cursive;
   padding: 2rem 1rem;
   border-radius: 1.5rem 1.5rem 0 0;
   background-color: #f6f6f6;
 }
-#page-resto .resto__title h2::before {
+#page-resto .resto__title .heartBtn {
+  background-color: white;
+  border-radius: 0 0 7rem 2rem;
+}
+#page-resto .resto__title .heartBtn::before {
   display: inline-block;
   font-style: normal;
   font-variant: normal;
@@ -435,7 +447,7 @@ body {
   font-weight: 400;
   position: absolute;
   content: "\f004";
-  font-size: 1.5rem;
+  font-size: 2rem;
   right: 1rem;
   top: 50%;
   transform: translateY(-50%);
@@ -444,8 +456,10 @@ body {
   -webkit-background-clip: text;
   opacity: 1;
   transition: all 150ms ease;
+  position: absolute;
+  cursor: pointer;
 }
-#page-resto .resto__title h2::after {
+#page-resto .resto__title .heartBtn::after {
   display: inline-block;
   font-style: normal;
   font-variant: normal;
@@ -455,7 +469,7 @@ body {
   font-weight: 900;
   position: absolute;
   content: "\f004";
-  font-size: 1.5rem;
+  font-size: 2rem;
   right: 1rem;
   top: 50%;
   transform: translateY(-50%);
@@ -464,9 +478,11 @@ body {
   -webkit-background-clip: text;
   opacity: 0;
   transition: all 150ms ease;
+  position: absolute;
+  cursor: pointer;
   background-image: linear-gradient(0deg, #9356dc, #ff79da);
 }
-#page-resto .resto__title h2:hover::after {
+#page-resto .resto__title .heartBtn:hover::after {
   opacity: 1;
   transform: translateY(-50%) scale(1.1);
 }
@@ -566,7 +582,9 @@ body {
   margin-right: 0;
 }
 #page-resto .menus .menus__category .menu-item:hover i {
-  animation: quarter-spin 0.5s ease-in-out;
+  height: 25px;
+  width: 25px;
+  animation: quarter-spin 1s ease-in-out;
 }
 @keyframes quarter-spin {
   0% {
